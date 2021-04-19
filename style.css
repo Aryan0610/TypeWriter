@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+body {
+  font-family: 'Poppins', arial;
+  background-color: #222831;
+}
+
+body .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px 0px;
+}
+
+body .header .title {
+  font-size: 35px;
+  color: #00ADB5;
+}
+
+body .header .config {
+  background-color: #393E46;
+  border-radius: 5px;
+  padding: 15px;
+  color: white;
+  font-size: 14px;
+  background-color: #393E46;
+}
+
+body .header .config .mode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .header .config .time-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .header .config .word-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .header .config .button {
+  padding: 5px;
+  padding-right: 15px;
+  padding-left: 15ps;
+}
+
+body .header .config .button:hover {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  color: #00ADB5;
+}
+
+body .header .config .false-mode {
+  display: none;
+}
+
+body .timer {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 100px;
+}
+
+body .words_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 25px 150px;
+}
+
+body .words_container .words {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 25px;
+  border: 0px;
+  border-radius: 5px;
+  padding: 15px;
+  resize: none;
+  background: #393E46;
+  color: #EEEEEE;
+}
+
+body .restart-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .restart-button .icon {
+  background-color: #EEEEEE;
+  color: #393E46;
+  border-radius: 5px;
+  padding: 1px 5px;
+}
+
+body .restart-button .text {
+  background-color: #222831;
+  color: #EEEEEE;
+  padding: 1px 2px;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
+
+.active {
+  opacity: 80%;
+  color: #a3f7bf;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.active_config, .active_mode {
+  color: #00ADB5;
+}
+/*# sourceMappingURL=style.css.map */

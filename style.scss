@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+body
+{
+    font-family: 'Poppins', arial;
+    background-color: #222831;
+    .header
+    {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px 0px;
+
+        .title
+        {
+            //padding: 10px;
+            //text-align: center;
+            font-size: 35px;
+            color: #00ADB5;
+        }
+
+        .config
+        {
+            background-color: #393E46;
+            border-radius: 5px;
+            padding: 15px;
+            color: white;
+            font-size: 14px;
+            background-color: #393E46;
+
+            .mode
+            {
+                display: flex;
+                justify-content: space-evenly;
+            }
+            
+            .time-options
+            {
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .word-options
+            {
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .button
+            {
+                padding: 5px;
+                padding-right: 15px;
+                padding-left: 15ps;
+            }
+
+            .button:hover
+            {
+                transition: all 0.3s ease 0s;   
+                cursor: pointer;
+                color: #00ADB5;
+            }
+
+            .false-mode
+            {
+                display: none;
+            }
+        }
+    }
+
+    .timer
+    {
+        margin-top: 50px;
+        text-align: center;
+        font-size: 100px;
+    }
+
+    .words_container
+    {
+        display: flex; 
+        flex-direction: column; 
+        padding: 25px 150px;
+        .words
+        {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 25px;
+            border: 0px;
+            border-radius: 5px;
+            padding: 15px;
+            resize: none;
+            background: #393E46;
+            color: #EEEEEE;
+        }
+    }
+    
+    .restart-button
+    {
+        display: flex;
+        justify-content: center;
+        .icon
+        {
+            background-color: #EEEEEE;
+            color: #393E46;
+            border-radius: 5px;
+            padding: 1px 5px;
+        }
+        .text
+        {
+            background-color: #222831;
+            color: #EEEEEE;
+            padding: 1px 2px;
+        }
+    }
+}
+.correct{
+    color: green;
+}
+.incorrect{
+    color: red;
+    //text-decoration: underline;
+}
+.active
+{
+    opacity: 80%;
+    color: #a3f7bf;
+    font-weight: 900;
+    text-decoration: underline;
+}
+.active_config, .active_mode
+{
+    color: #00ADB5
+}

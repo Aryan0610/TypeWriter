@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" initial-scale=1.0">
+    <title>TypeWriter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="title">TypeWriter</div>
+        <div class="config">
+            <div class="mode">
+                <div id="time-mode" class="button time active_mode">Time</div>
+                <div id="words-mode" class="button words">Words</div>
+            </div>
+            <div id="time-options" class="time-options">
+                <div id="time-button-15" class="button">15</div>
+                <div id="time-button-30" class="button active_config">30</div>
+                <div id="time-button-45" class="button">45</div>
+                <div id="time-button-60" class="button">60</div>
+                <div id="time-button-120" class="button">120</div>
+            </div>
+            <div id="word-options" class="word-options false-mode">
+                <div id="word-button-25" class="button active_config">25</div>
+                <div id="word-button-50" class="button">50</div>
+                <div id="word-button-75" class="button">75</div>
+                <div id="word-button-100" class="button">100</div>
+            </div>
+        </div>
+    </div>
+    <div class="timer" id="timer">30</div>
+    <div class="words_container">
+        <div class="words" id="textarea"></div>
+    </div>
+
+    <div class="restart-button">
+        <div class="icon">esc</div>
+        <div class="text">- restart test</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
